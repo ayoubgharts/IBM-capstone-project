@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2190FF;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #2190FF;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons .sign-up,
+.auth-buttons .login {
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    border: 1px solid #2190FF;
+    background-color: transparent;
+    color: #2190FF;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .sign-up:hover,
+.auth-buttons .login:hover {
+    background-color: #2190FF;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    padding-top: 15rem;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.hero-section .flex-hero {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.hero-section .flex-hero h1 {
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #2190FF 2.34%, #b673f8 100.78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section h4 {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding: 12px 14rem;
+    color: #969BA5;
+}
+
+.hero-section .button {
+    padding: 0.7rem 2rem;
+    border-radius: 25px;
+    background-color: #2190FF;
+    color: #fff;
+    border: 1px solid transparent;
+    width: 15%;
+    margin-top: 15px;
+}
+
+.hero-section div:nth-child(2) {
+    margin-top: 4rem;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 980px) {
+    .hero-section {
+        padding-top: 12rem;
+    }
+    .hero-section h1 {
+        font-size: 45px;
+    }
+    .hero-section h4 {
+        padding: 0px 4rem;
+    }
+    .auth-buttons .sign-up,
+    .auth-buttons .login {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-section h1 {
+        font-size: 35px;
+    }
+    .hero-section h4 {
+        font-size: 16px;
+        padding: 0px 2rem;
+    }
+    .auth-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

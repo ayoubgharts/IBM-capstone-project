@@ -1,0 +1,39 @@
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.notification__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notification__message {
+  margin-bottom: 5px;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
